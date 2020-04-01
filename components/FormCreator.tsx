@@ -11,8 +11,9 @@ const FormCreator:React.FC<IFormCreator> = ({data, link, id,  route}) => {
       try {
         let data = await axios.post(`https://simple-blog-api.crew.red/${link}`, 
         body)
-        changeIsSanding(false)
         setBody({})
+        changeIsSanding(false)
+        
         Router.push(route)
       } catch (e) {
         throw (e)
@@ -32,7 +33,7 @@ const FormCreator:React.FC<IFormCreator> = ({data, link, id,  route}) => {
     <div className="form-group">
       {data.map(d=><div key = {d[0]}>
         <label htmlFor="exampleTextarea">{d[1]}</label>
-    <textarea className="form-control" id="exampleTextarea"  onChange={e=>inputChange(e, d[0])}></textarea>
+    <textarea className="form-control" id="exampleTextarea" onChange={e=>inputChange(e, d[0])}></textarea>
       </div>)}
     
     <button onClick={()=>changeIsSanding(true)} className="btn btn-outline-primary">send</button>
