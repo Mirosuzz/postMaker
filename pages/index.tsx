@@ -7,8 +7,7 @@ import {IPost} from './Interfaces'
 const Index:NextPage<{posts:[IPost]}> = ({posts}) => {
   return(
   <Layout>
-    <div style={{"display":"flex", "flexDirection":"column", 
-    "justifyContent":"center"}}>
+    <div style={{"display":"flex", "flexDirection":"column", "justifyContent":"center"}}>
       <h1>Last Posts</h1>
       <Posts posts={posts}/>
     </div>

@@ -1,8 +1,0 @@
-export const CHANGE_NEWROW='CHANGE_NEWROW'
-export const SAVE_POSTS = 'SAVE_POSTS'
-export const TAKE_POSTS = 'TAKE_POSTS'
-export const POST_POSTS = 'POST_POSTS'
-export const HIDE_ALERT = 'HIDE_ALERT' 
-export const SHOW_ALERT = 'SHOW_ALERT'
-export const HIDE_LOADER = 'HIDE_LOADER' 
-export const SHOW_LOADER = 'SHOW_LOADER'

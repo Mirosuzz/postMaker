@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import axios from 'axios'
 import Layout from '../../components/Layout';
 import Post from '../../components/elements/Post';
@@ -11,8 +11,8 @@ const OnePost: NextPage<{post:IPosts}> = ({ post }) => {
 return (
     <Layout>
       {post?
-      <div style={{'display':'flex'}}>
-      <div style={{}}>
+      <div style={{'display':'flex', 'justifyContent':'center'}}>
+      <div style={{'margin':'15px'}}>
       <Post info={post}/>
       <FormCreator data={[['body', 'Create your comment']]} link={'comments'}
        id={post.id}  route={`/posts/${post.id}`} />
